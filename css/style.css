@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 18px;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 357px;
+}
+@media (min-width:768px){
+    .container{
+    width: 500px;
+}
+}
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: wheat
+}
+.logo{
+    font-weight: bold;
+    font-size: 29px;
+}
+.theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    position: relative;
+}
+.num {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+} 
+.num  span{
+    margin-bottom: 10px;
+    margin-right: 16px;
+}
+.circle{
+    width: 89px;
+    height: 26px;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 5px;
+}
+.circle .cir{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+} 
+
+.input{
+    height: 100px;
+    width: 100%;
+    font-weight: bold;
+    margin: 20px 0;
+    border-radius: 7px;
+    font-size: 38px;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+}
+.buttons{
+    padding: 30px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+}
+.buttons div{
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 6px;
+    background: #dac9c9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;    
+    box-shadow: 0px 4px 1px;
+}
+.reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.equal{
+        grid-column-start:3;
+    grid-column-end: 5;
+}
+.intput , .buttons{
+    border-radius: 7px;
+}
+.but , .cir{
+    cursor: pointer;
+}
+.theme3{
+    display:none;
+}
+.theme2{
+    display:none;
+}
+.theme1 .circle .cir{
+    left:5px;
+}
+.theme2 .circle .cir{
+    left:35px ;
+}
+.theme3 .circle .cir{
+    left:65px;
+}
+.theme1 ,input.th1 {
+    color:white;
+}
+.theme2 ,input.th2 {
+    color:hsl(60, 10%, 19%);
+}
+.theme3  ,input.th3{
+    color:hsl(52, 100%, 62%);
+}
+.theme1.larg_background ,.th1{
+    background-color:hsl(222, 26%, 31%);
+}
+
+.theme2.larg_background ,.th2{
+    background-color: hsl(0, 0%, 90%);
+}
+.theme3.larg_background ,.th3{
+    background-color:  hsl(268, 75%, 9%);
+}
+.th1.input ,.buttons.th1 {
+    background-color: hsl(224, 36%, 15%);
+}
+.th2.input ,.buttons.th2{
+        background-color: hsl(0, 0%, 93%);
+}
+.th3.input  ,.buttons.th3{
+        background-color:hsl(268, 71%, 12%);
+}
+.th1 > .button_background{
+    background-color:hsl(0, 0%, 90%);
+        box-shadow: 0px 4px 1px hsl(28, 16%, 65%);
+}
+.th2 > .button_background {
+    background-color: hsl(0, 0%, 93%);
+    box-shadow: 0px 4px 1px hsl(35, 11%, 61%);
+}
+.th3 > .button_background{
+    background-color: hsl(268, 47%, 21%);
+        box-shadow: 0px 4px 1px  hsl(290, 70%, 36%);
+}
+.th3 > .button_background:hover {
+    background-color: hsl(268deg 45% 39%);
+}
+.buttons.th1 > .button_background{
+    color:hsl(222, 26%, 31%);
+}
+.buttons.th2{
+    background-color:hsl(0, 5%, 81%);
+}
+.buttons.th1 > .button_background:hover ,.th2 > .button_background:hover{
+        background-color: white;
+}
+.delete_background ,.reset{
+    color : white;
+}
+.th1 >.delete_background ,.th1 > .reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 1px hsl(224deg 28% 35%);
+}
+.th1 >.delete_background:hover ,.th1 > .reset:hover{
+    background-color: hsl(225deg 36% 64%);
+}
+.th2 >.delete_background ,.th2 >.reset{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 1px  hsl(185, 58%, 25%);
+}
+.th2 >.delete_background:hover ,.th2 >.reset:hover{
+    background-color: hsl(185deg 62% 44%);;
+}
+.th3 >.delete_background ,.th3 >.reset{
+    background-color:hsl(281, 89%, 26%);
+        box-shadow: 0px 4px 1px  hsl(285, 91%, 52%);
+}
+.th3 >.delete_background:hover ,.th3 >.reset:hover{
+    background-color: hsl(281deg 88% 42%);
+}
+.th1 >.equal_background ,.cir.th1{
+    background-color:hsl(6, 63%, 50%);
+        box-shadow: 0px 4px 1px  hsl(6, 70%, 34%);
+}
+.th1 >.equal_background:hover ,.cir.th1:hover{
+        background-color: hsl(6deg 81% 59%);
+}
+.th2 >.equal_background,.cir.th2{
+    background-color:hsl(25, 98%, 40%);
+        box-shadow: 0px 4px 1px  hsl(25, 99%, 27%);
+}
+.th2 >.equal_background:hover,.cir.th2:hover{
+    background-color:hsl(25deg 100% 57%);
+}
+.th3 >.equal_background ,.cir.th3{
+    background-color:hsl(176, 100%, 44%);
+    box-shadow: 0px 4px 1px  hsl(177, 92%, 70%);
+}
+.th3 >.equal_background:hover ,.cir.th3:hover{
+    background-color: hsl(176deg 88% 50%);
+}
+.cir.th1 ,.cir.th2,.cir.th3{
+    box-shadow: 0px 0px 0px;
+}
+.cir.th1:hover ,.cir.th2:hover,.cir.th3:hover{
+    opacity: .8;
+}
